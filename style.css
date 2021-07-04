@@ -1,0 +1,131 @@
+body {
+  background-color: rgb(230, 227, 227);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5em;
+}
+
+.hamburger_image {
+  cursor: pointer;
+  width: 50px;
+}
+
+.hamburger_image:hover {
+  opacity: 0.5;
+}
+
+ul {
+  transition: all 0.5s ease-in-out;
+}
+
+.hamburger_menu {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  width: 250px;
+  line-height: 50px;
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+/*================================Submenu ====================*/
+.submenu_home,
+.submenu_red,
+.submenu_orange,
+.submenu_purple,
+.submenu_green {
+  color: #000;
+  padding-left: 10px;
+}
+
+.submenu_home {
+  border: solid 1px white;
+  background-color: gray;
+}
+
+.submenu_red {
+  border: solid 1px white;
+  background-color: red;
+}
+
+.submenu_orange {
+  border: solid 1px white;
+  background-color: orange;
+}
+.submenu_purple {
+  border: solid 1px white;
+  background-color: purple;
+}
+.submenu_green {
+  border: solid 1px white;
+  background-color: green;
+}
+
+.hamburger_menu:hover,
+.hamburger_menu:focus {
+  background-color: #bbbab9;
+}
+
+.hamburger_dropdown {
+  position: relative;
+  display: block;
+}
+
+.submenu_home:hover {
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
+
+.submenu_red:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+.submenu_orange:hover {
+  background-color: orange;
+  color: white;
+}
+
+.submenu_purple:hover {
+  background-color: purple;
+  color: white;
+}
+
+.submenu_green:hover {
+  background-color: green;
+  color: white;
+}
+
+/*======================Submenu Background colors==================*/
+.submenu_home-background {
+  background-color: gray;
+}
+
+.submenu_red-background {
+  background-color: red;
+}
+
+.submenu_orange-background {
+  background-color: orange;
+}
+.submenu_purple-background {
+  background-color: purple;
+}
+
+.submenu_green-background {
+  background-color: green;
+}
+
+/*========================== Radiobutton============================= */
+
+.radio {
+  cursor: pointer;
+}
+
+.radio:hover input ~ .checkmark {
+  background-color: #ccc;
+}
